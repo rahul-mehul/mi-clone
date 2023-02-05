@@ -7,10 +7,41 @@ function HotAccessories(props) {
         <div className='HotAccessories'>
             <div>
                 <img
-                    src={props.musicCover} alt="Cover" />
+                    src={props.musicCover || props.smartDeviceCover || props.homeCover || props.lifeStyleCover || props.mobileAccessoriesCover} alt="Cover" />
             </div>
             <div>
-                {props.music.map((item, index) => (<HotItemCard
+                {props.music && props.music.map((item, index) => (<HotItemCard
+                    key={item.image}
+                    name={item.name}
+                    price={item.price}
+                    image={item.image}
+                    index={index} />
+                ))}
+
+                {props.smartDevice && props.smartDevice.map((item, index) => (<HotItemCard
+                    key={item.image}
+                    name={item.name}
+                    price={item.price}
+                    image={item.image}
+                    index={index} />
+                ))}
+
+                {props.home && props.home.map((item, index) => (<HotItemCard
+                    key={item.image}
+                    name={item.name}
+                    price={item.price}
+                    image={item.image}
+                    index={index} />
+                ))}
+
+                {props.lifeStyle && props.lifeStyle.map((item, index) => (<HotItemCard
+                    key={item.image}
+                    name={item.name}
+                    price={item.price}
+                    image={item.image}
+                    index={index} />
+                ))}
+                {props.mobileAccessories && props.mobileAccessories.map((item, index) => (<HotItemCard
                     key={item.image}
                     name={item.name}
                     price={item.price}

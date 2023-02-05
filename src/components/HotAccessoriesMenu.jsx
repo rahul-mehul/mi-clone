@@ -6,7 +6,7 @@ function HotAccessoriesMenu() {
     return (
         <div className='HotAccessoriesMenu'>
             <Link className='HotAccessorieslink' to='/music'>Music Store</Link>
-            <Link className='HotAccessorieslink' to='/smartDevices'>Smart Devices</Link>
+            <Link className='HotAccessorieslink' to='/smartDevice'>Smart Devices</Link>
             <Link className='HotAccessorieslink' to='/home'>Home</Link>
             <Link className='HotAccessorieslink' to='/lifestyle'>Life Style</Link>
             <Link className='HotAccessorieslink' to='/mobileAccessories'>Mobile Accessories</Link>
