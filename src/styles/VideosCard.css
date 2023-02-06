@@ -1,0 +1,16 @@
+.VideosCard {
+    width: 30vmax;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: .5vmax;
+    cursor: pointer;
+}
+
+.VideosCard p {
+    color: white;
+}

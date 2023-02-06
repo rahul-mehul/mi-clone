@@ -5,10 +5,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Slider from './components/Slider';
 import Offers from './components/Offers';
 import data from './data/data.json';
+
 import Heading from './components/Heading';
 import StarProduct from './components/StarProduct'
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
 import HotAccessories from './components/HotAccessories'
+import ProductReviews from './components/ProductReviews';
+import Videos from './components/Videos';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 
 
@@ -45,6 +50,17 @@ function App() {
       <HotAccessories
         mobileAccessories={data.hotAccessories.mobileAccessories}
         mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />
+
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews ProductReviews={data.productReviews} />
+
+      <Heading text="VIDEOS" />
+      <Videos videos={data.videos} />
+
+      <Heading text="IN THE PRESS" />
+
+      <Banner banner={data.banner} />
+      <Footer />
     </Router>
   );
 }
