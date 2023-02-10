@@ -1,14 +1,13 @@
 
 import Carousel from 'react-bootstrap/Carousel'
 import "bootstrap/dist/css/bootstrap.min.css"
-// import { CarouselItem } from 'react-bootstrap'
 
 
 function Banner(props) {
     return (
         <Carousel>
             {props.banner.end.map((item, index) => (
-                <Carousel.Item key={item.image} id="banner" interval={1000} keyboard={true}>
+                <Carousel.Item key={item.image} id="banner" interval={2000}  >
                     <img
                         className='d-block w-100'
                         id='bannerImage'

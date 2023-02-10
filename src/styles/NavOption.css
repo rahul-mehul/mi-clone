@@ -1,0 +1,7 @@
+.navOptions {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2vmax;
+    z-index: 1000;
+}

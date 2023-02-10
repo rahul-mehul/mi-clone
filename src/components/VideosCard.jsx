@@ -4,8 +4,9 @@ import "../styles/VideosCard.css"
 function VideosCard(props) {
     return (
         <div className='VideosCard' style={{ backgroundImage: `url(${props.image})` }}>
-            {/* <a href=""></a> */}
+
             <p>{props.name}</p>
+
         </div>
     )
 }

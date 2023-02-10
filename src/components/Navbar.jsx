@@ -19,13 +19,14 @@ function Navbar() {
             <Link to="/tv" className="navlinks">TV</Link>
             <Link to="/laptops" className="navlinks">Laptops</Link>
             <Link to="/fitness&lifestyle" className="navlinks">Fitness & Lifestyle</Link>
-            <Link to="/radio" className="navlinks">Radio</Link>
+            <Link to="homedecor" className='navlinks'>Home Decore</Link>
+            <Link to="/audio" className="navlinks">Audio</Link>
             <Link to="/accessories" className="navlinks">Accessories</Link>
             <div className="searchbox">
                 <input type="text" name="search" placeholder='Search Products' />
                 {searchIcon}
             </div>
-        </div>
+        </div >
 
     )
 }

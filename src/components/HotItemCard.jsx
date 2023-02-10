@@ -13,6 +13,7 @@ function HotItemCard(props) {
             <span>{props.price}</span>
 
         </div>
+
     )
 }
 
