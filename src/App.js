@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Slider from './components/Slider';
 import data from './data/data.json';
 import Heading from './components/Heading';
-import StarProduct from './components/StarProduct'
+// import StarProduct from './components/StarProduct'
 import HotAccessoriesMenu from './components/HotAccessoriesMenu';
-import ProductReviews from './components/ProductReviews';
+// import ProductReviews from './components/ProductReviews';
 import Videos from './components/Videos';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
@@ -48,8 +48,7 @@ function App() {
       </Routes>
 
       <Slider />
-      <Heading text='STAR PRODUCTS' />
-      <StarProduct starProduct={data.starProduct} />
+
       <Heading text='HOT ACCESSORIES' />
       <HotAccessoriesMenu />
 
@@ -60,18 +59,14 @@ function App() {
         <Route path='/music' element={<Music music={data.hotAccessories.music}
           musicCover={data.hotAccessoriesCover.music} />} />
 
-        <Route path='/homedevices' element={<HomeDevices home={data.hotAccessories.home}
-          homeCover={data.hotAccessoriesCover.home} />} />
-
         <Route path='/lifestyle' element={<LifeStyle lifeStyle={data.hotAccessories.lifeStyle}
           lifeStyleCover={data.hotAccessoriesCover.lifeStyle} />} />
 
         <Route path='/mobileAccessories' element={<MobileAccessories mobileAccessories={data.hotAccessories.mobileAccessories}
           mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />} />
       </Routes>
-
-      <Heading text="PRODUCT REVIEWS" />
-      <ProductReviews ProductReviews={data.productReviews} />
+      <HomeDevices home={data.hotAccessories.home}
+        homeCover={data.hotAccessoriesCover.home} />
 
       <Heading text="VIDEOS" />
       <Videos videos={data.videos} />
